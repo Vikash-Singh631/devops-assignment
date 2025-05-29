@@ -50,7 +50,7 @@ LOGS & MATRICS
 - Minikube (or KinD)
 - Helm
 - Node.js / Python / Go (depending on app)
-- GitHub CLI (for secrets)
+- Kubernetes (for secrets)
 - Trivy
 
 ### 1. Clone the Repository
