@@ -105,6 +105,15 @@ kubectl create secret generic myapp-secret \
 
 5. Deploy using Helm to Minikube
 
+## Helm Chart Folder Structure
+helm-chart/
+├── Chart.yaml
+├── values.yaml
+└── templates/
+    ├── deployment.yaml
+    ├── service.yaml
+    └── ingress.yaml
+
 
 ## Expose Prometheus Metrics
 
