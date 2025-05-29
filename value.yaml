@@ -1,0 +1,23 @@
+replicaCount: 2
+
+image:
+  repository: yourdockerhubusername/myapp
+  tag: latest
+  pullPolicy: IfNotPresent
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "250m"
+  limits:
+    memory: "256Mi"
+    cpu: "500m"
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: true
+  host: myapp.local
+
